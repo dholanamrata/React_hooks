@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+// async na use kriye to promice n banavvu pade direct resolve and reject thai jashe 
+// async function f() {
+//   return 1;
+// }
+// f().then(console.log)
+
+async function f() {
+
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("done!"), 1000)
+});
+
+let result = await promise
+console.log(result)
+// // promise.then(console.log)
+// let result = await promise; // wait until the promise resolves (*)
+
+// console.log(result)// "done!"
+// return "mukesh";
+}
+
+f()
+
+// f().then(console.log)
+// console.log(f())
+ // 1
+</script>
