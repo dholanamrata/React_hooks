@@ -7,9 +7,12 @@
     text-align: center;
     margin: auto;
     margin-top: 70px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     background-color: white;
-    gap: 2px;
+    margin-bottom: 5px;
 }
 
 .input-div {
@@ -126,5 +129,6 @@ input[type="password"]:-ms-input-placeholder {
 }
 .error-div{
     color: red;
+    margin-left: 0;
     
 } 

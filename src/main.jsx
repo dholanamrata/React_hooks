@@ -9,8 +9,8 @@ import ReactDOM from 'react-dom/client'
 // import App from './useEffect/app.jsx'
 
 // //for navigation
-import App from './React_router_dom/home.jsx'
-import { BrowserRouter } from 'react-router-dom';
+// import App from './React_router_dom/home.jsx'
+// import { BrowserRouter } from 'react-router-dom';
 
 // import PromiseData from './promice/promise_comment_list.jsx'
 // import PromiseData from './promice/promice_table.jsx'
@@ -22,6 +22,10 @@ import { BrowserRouter } from 'react-router-dom';
 // import store from './redux/redux_toolkit/store';
 // import App  from './redux/redux_toolkit/app';
 
+//code-redux
+import { Provider } from 'react-redux';
+import store from './redux/core_redux/store.jsx';
+import App from './redux/core_redux/App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -30,13 +34,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Context/> */}
     {/* <DemoContext/> */}
     {/* <Stopwatch /> */}
-    <BrowserRouter> <App /></BrowserRouter>
+    {/* <BrowserRouter> <App /></BrowserRouter> */}
     {/* <PromiseData/> */}
     {/* <PostData/> */}
-   {/* <Signup/> */}
-   
-   {/* <Provider store={store}>
+    {/* <Signup/> */}
+
+    <Provider store={store}>
       <App/>
-    </Provider> */}
+    </Provider>
   </React.StrictMode>
 )

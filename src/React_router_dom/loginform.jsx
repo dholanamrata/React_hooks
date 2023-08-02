@@ -65,10 +65,11 @@ export const Login = () => {
                                         value={values.firstname}
                                         className={errors.firstname && touched.firstname ? "input-error" : ""}
                                     />
-                                    {touched.firstname && errors.firstname ? (
+                                    
+                                </div>
+                                {touched.firstname && errors.firstname ? (
                                         <div className="error-div">{errors.firstname}</div>
                                     ) : null}
-                                </div>
 
                                 <div className="input-div">
                                     <input
