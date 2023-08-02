@@ -7,12 +7,21 @@ import ReactDOM from 'react-dom/client'
 // import DemoContext from './useContext/demo'
 // import Stopwatch from './useRef/stopwatch'
 // import App from './useEffect/app.jsx'
+
 // //for navigation
-// import App from './React_router_dom/app.jsx'
-// import { BrowserRouter } from 'react-router-dom';
+import App from './React_router_dom/home.jsx'
+import { BrowserRouter } from 'react-router-dom';
+
 // import PromiseData from './promice/promise_comment_list.jsx'
 // import PromiseData from './promice/promice_table.jsx'
-import PostData from './promice/promice_post_await'
+// import PostData from './promice/promice_post_await'
+// import {Signup} from './formik/form1.jsx'
+
+//redux_toolkit
+// import { Provider } from 'react-redux';
+// import store from './redux/redux_toolkit/store';
+// import App  from './redux/redux_toolkit/app';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,9 +30,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Context/> */}
     {/* <DemoContext/> */}
     {/* <Stopwatch /> */}
-    {/* <BrowserRouter> <App /></BrowserRouter> */}
+    <BrowserRouter> <App /></BrowserRouter>
     {/* <PromiseData/> */}
-    <PostData/>
+    {/* <PostData/> */}
+   {/* <Signup/> */}
    
+   {/* <Provider store={store}>
+      <App/>
+    </Provider> */}
   </React.StrictMode>
 )

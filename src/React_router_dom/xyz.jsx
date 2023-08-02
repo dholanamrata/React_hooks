@@ -1,7 +1,12 @@
 import './xyz.css'
 
 const Xyz = ()=>{
-    return <h1>react rouet dom</h1>
+    return (
+        <>
+          <img src='.' alt='home'/>
+        </>
+      );
 }
+
 
 export default Xyz;
